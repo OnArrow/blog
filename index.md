@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /docs/Introduction
+      link: /docs/other/Introduction
 
 features:
   - title: Feature A
