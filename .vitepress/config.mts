@@ -9,7 +9,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/docs/index' },
-      { text: 'About me', link: '/docs/other/about' }
+      { text: 'About me', link: '/docs/other/About' }
     ],
     sidebar: [
       {
