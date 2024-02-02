@@ -17,7 +17,11 @@ export default defineConfig({
         items: [
           {
             text: 'vitepress+github actions实现自动部署项目到服务器',
-            link: '/src/deploy/vitepress+github actions实现自动部署项目到服务器'
+            link: '/docs/deploy/vitepress+github actions实现自动部署项目到服务器'
+          },
+          {
+            text: '服务器配置ssh免密登录',
+            link: '/docs/deploy/服务器配置ssh免密登录'
           }
         ]
       }
