@@ -2,11 +2,7 @@
 
 ## Flow Chat：
 
-```mermaid
-graph TB
-    A(使用git推送代码到github仓库) --> B[github监听到指定分支代码发生变化]
-    --> C[执行actions工作流] -->|install node,install pnpm,install dependencies, run build...| D[github把项目build后的文件推送到指定服务器的目标目录]
-```
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:489px; height:500px;" src="https://www.processon.com/embed/65bc90ca364738708d335d8e"></iframe>
 
 ## Steps
 
@@ -22,6 +18,10 @@ graph TB
    ![alt text](./images/remote-host.png)
 
 4. 将你自己电脑的`ssh公钥`交给你自己服务器，到时候 github 才能去把文件推到你自己服务器上面
+
+   ::: tip 简单描述
+   总而言之，公钥给服务器，私钥给 github
+   :::
 
 5. 在项目的根目录上创建`.github/workflows/deploy.yml`文件，内容为以下
 
@@ -84,3 +84,37 @@ graph TB
            TARGET: '/var/www/html/english'
            SCRIPT_BEFORE: 'ls'
    ```
+
+## Mistakes
+
+1. copy 私钥时，一定要把开头和结尾也 copy 进去，那也算私钥的一部分
+
+::: code-group
+
+```bash [right]
+    -----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEAsgVratuF64o6SCarBpJDj2IOlhU/QN6ECQ0fXpQ0cN/mlMTZuagQ
+W0B08iyVxvO91DRbfrwd27BDGYhWxNCtamzIg6UbIYnrk/3L3zi5gLQl5mPc2CQirYcI4L
+4kar6lSJ6mU4zv...
+-----END OPENSSH PRIVATE KEY-----
+```
+
+```bash [wrong]
+
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEAsgVratuF64o6SCarBpJDj2IOlhU/QN6ECQ0fXpQ0cN/mlMTZuagQ
+W0B08iyVxvO91DRbfrwd27BDGYhWxNCtamzIg6UbIYnrk/3L3zi5gLQl5mPc2CQirYcI4L
+4kar6lSJ6mU4zv...
+
+```
+
+:::
+
+2. `deploy.yml`文件中的`uses`字段表示使用的是第三方包名，不要进行改动。如以下包
+
+   - https://github.com/easingthemes/ssh-deploy
+
+   - https://github.com/actions/setup-node
+
+   - https://github.com/actions/checkout
