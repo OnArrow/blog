@@ -28,6 +28,15 @@ export default defineConfig({
             link: '/docs/deploy/vitepress+github actions实现自动部署项目到服务器'
           }
         ]
+      },
+      {
+        text: 'Nginx',
+        items: [
+          {
+            text: 'Common Commands',
+            link: '/docs/nginx/Common Commands'
+          }
+        ]
       }
     ],
 
