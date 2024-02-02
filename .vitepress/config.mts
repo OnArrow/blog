@@ -5,10 +5,11 @@ export default defineConfig({
   base: '/blog',
   title: "Jack's Blog",
   description: 'Just record',
+
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Home', link: '/docs/index' },
+      { text: 'About me', link: '/docs/other/about' }
     ],
     sidebar: [
       {

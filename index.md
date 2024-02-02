@@ -8,11 +8,8 @@ hero:
   tagline: 真正的大师，永远都怀着一颗学徒的心
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Get Started
+      link: /docs/Introduction
 
 features:
   - title: Feature A
