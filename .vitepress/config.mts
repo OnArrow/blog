@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jack's Blog",
-  description: "A VitePress Site",
+  description: 'A VitePress Site',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -13,10 +13,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Deploy',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {
+            text: 'vitepress+github actions实现自动部署项目到服务器',
+            link: '/src/deploy/vitepress+github actions实现自动部署项目到服务器'
+          }
         ]
       }
     ],
