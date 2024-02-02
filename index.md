@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Jack's Blog"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: 'A VitePress Site'
+  tagline: 真正的大师，永远都怀着一颗学徒的心
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
