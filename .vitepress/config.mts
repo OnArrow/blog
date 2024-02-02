@@ -4,14 +4,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/blog',
   title: "Jack's Blog",
-  description: 'A VitePress Site',
+  description: 'Just record',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
         text: 'Deploy',
