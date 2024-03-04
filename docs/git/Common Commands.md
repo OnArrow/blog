@@ -46,3 +46,5 @@
    ```bash
    git remote add origin https://github.com/OnArrow/recite_word.git
    ```
+
+9. 在终端输入`code .`可以快速使用 vscode 打开当前目录
