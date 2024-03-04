@@ -19,12 +19,18 @@ cat ~/.ssh/id_rsa.pub
 ### Mac
 
 ```bash
-
+cat ~/.ssh/id_rsa.pub
 ```
 
 ## Get Private key
 
 ### Windows
+
+```bash
+cat ~/.ssh/id_rsa
+```
+
+### Mac
 
 ```bash
 cat ~/.ssh/id_rsa
