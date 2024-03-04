@@ -37,6 +37,15 @@ export default defineConfig({
             link: '/docs/nginx/Common Commands'
           }
         ]
+      },
+      {
+        text: 'Git',
+        items: [
+          {
+            text: 'Common Commands',
+            link: '/docs/git/Common Commands'
+          }
+        ]
       }
     ],
 
