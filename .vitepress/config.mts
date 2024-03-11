@@ -46,6 +46,15 @@ export default defineConfig({
             link: '/docs/git/Common Commands'
           }
         ]
+      },
+      {
+        text: 'Work',
+        items: [
+          {
+            text: '如何将一个通过 gzip 压缩得来的 base64 字符串反向解析',
+            link: '/docs/work/解析base64'
+          }
+        ]
       }
     ],
 
