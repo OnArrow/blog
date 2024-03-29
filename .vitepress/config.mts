@@ -55,6 +55,15 @@ export default defineConfig({
             link: '/docs/work/解析base64'
           }
         ]
+      },
+      {
+        text: 'Vue',
+        items: [
+          {
+            text: '项目部署在二级域名下',
+            link: '/docs/vue/项目部署在二级域名下'
+          }
+        ]
       }
     ],
 
