@@ -12,6 +12,8 @@ ssh-keygen -t rsa -C 'Your Email'
 ssh-keygen -t rsa -C xxx@qq.com
 ```
 
+:::
+
 一直按`Enter`就可以
 
 ## Get Public Key
