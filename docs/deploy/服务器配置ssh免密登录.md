@@ -58,13 +58,13 @@ function ssh-copy-id([string]$userAtMachine, $args){
 再次执行`ssh-copy-id -i id_rsa user@host`即可
 :::
 
-## 修改 ssh 配置
+## 修改服务器上的 ssh 配置
 
 1. 找到`/etc/ssh/sshd_config`文件后修改里面的内容。如果没有需要追加
 
 ```
-PubkeyAuthentication yes
-PasswordAuthentication no
+PubkeyAuthentication yes // 是否允许ssh登陆
+PasswordAuthentication no // 是否允许使用密码登陆服务器
 ```
 
 2. 重启 ssh 服务

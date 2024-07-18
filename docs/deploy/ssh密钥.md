@@ -2,9 +2,17 @@
 
 ## Generate key
 
-```bash
-ssh-keygen -o
+::: code-group
+
+```bash [right]
+ssh-keygen -t rsa -C 'Your Email'
 ```
+
+```bash [Example]
+ssh-keygen -t rsa -C xxx@qq.com
+```
+
+:::
 
 一直按`Enter`就可以
 
