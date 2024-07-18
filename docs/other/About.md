@@ -1,3 +1,3 @@
 # About me
 
-A coder, like fitness
+A coder, like fitness.
