@@ -56,3 +56,4 @@ jobs:
           # 目标地址
           TARGET: '/var/www/html/blog'
           SCRIPT_BEFORE: 'ls'
+          REMOTE_PORT: 2222
