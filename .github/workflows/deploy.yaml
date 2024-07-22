@@ -44,7 +44,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           # 私钥
-          SSH_PRIVATE_KEY: ${{ secrets.BYW_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.MAC_PRIVATE_KEY }}
           # SCP参数
           ARGS: '-avzr --delete'
           # 服务器ip
@@ -55,4 +55,6 @@ jobs:
           SOURCE: '.vitepress/dist/'
           # 目标地址
           TARGET: '/var/www/html/blog'
-          SCRIPT_BEFORE: 'ls'
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al
