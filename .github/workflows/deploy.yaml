@@ -50,7 +50,7 @@ jobs:
           # 服务器ip
           REMOTE_HOST: '47.119.18.67'
           # 用户
-          REMOTE_USER: 'root'
+          REMOTE_USER: 'xieghua'
           # 源目录
           SOURCE: '.vitepress/dist/'
           # 目标地址
