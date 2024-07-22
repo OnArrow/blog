@@ -48,13 +48,13 @@ jobs:
           # SCP参数
           ARGS: '-avzr --delete'
           # 服务器ip
-          REMOTE_HOST: '120.25.124.101'
+          REMOTE_HOST: '47.119.18.67'
           # 用户
           REMOTE_USER: 'root'
           # 源目录
           SOURCE: '.vitepress/dist/'
           # 目标地址
-          TARGET: '/var/www/html/blog'
-          # TARGET: '/usr/share/nginx/html/blog'
+          # TARGET: '/var/www/html/blog'
+          TARGET: '/usr/share/nginx/html/blog'
           SCRIPT_BEFORE: 'ls'
-          # REMOTE_PORT: '1311'
+          REMOTE_PORT: '1311'
