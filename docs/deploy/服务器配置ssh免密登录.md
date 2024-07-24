@@ -64,7 +64,7 @@ function ssh-copy-id([string]$userAtMachine, $args){
 
 ```
 PubkeyAuthentication yes // 是否允许ssh登陆
-PasswordAuthentication no // 是否允许使用密码登陆服务器
+PasswordAuthentication no // 是否允许使用密码登陆服务器。根据情况添加
 ```
 
 2. 重启 ssh 服务
