@@ -4,7 +4,7 @@
 
 ::: code-group
 
-```bash [right]
+```bash [Right]
 ssh-keygen -t rsa -C 'Your Email'
 ```
 
@@ -24,7 +24,7 @@ ssh-keygen -t rsa -C xxx@qq.com
 cat ~/.ssh/id_rsa.pub
 ```
 
-### Mac
+### Mac & Linux
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -38,7 +38,7 @@ cat ~/.ssh/id_rsa.pub
 cat ~/.ssh/id_rsa
 ```
 
-### Mac
+### Mac & Linux
 
 ```bash
 cat ~/.ssh/id_rsa

@@ -6,24 +6,24 @@
 
 ## Steps
 
-1. 在 github 上创建一个 repository，然后把本地代码 push 进去
+1. 在 `github` 上创建一个 `repository`，然后把本地代码 `push` 进去
 
-2. 在 repository 的 Setting -> Actions -> General -> Actions Permissions 设置权限
+2. 在 `repository` 的 **Setting -> Actions -> General -> Actions Permissions** 设置权限
 
    ![actions permission](./images/actions-permission.png)
 
-3. 在 repository 的 Secrets and variables -> Actions 设置变量。主要有`ssh连接自己服务器的私钥`、`自己服务器的ip`。其它有需要的也可以在此定义
+3. 在 `repository` 的 **Secrets and variables -> Actions** 设置变量。主要有 `ssh连接自己服务器的私钥`、`自己服务器的ip`。其它有需要的也可以在此定义
 
    ![secrets](./images/secrets.png)
    ![alt text](./images/remote-host.png)
 
-4. 将你自己电脑的`ssh公钥`交给你自己服务器，到时候 github 才能去把文件推到你自己服务器上面
+4. 将你自己电脑的 `ssh公钥` 交给你自己服务器，到时候 `github` 才能去把文件推到你自己服务器上面
 
    ::: tip 简单描述
    总而言之，公钥给服务器，私钥给 github
    :::
 
-5. 在项目的根目录上创建`.github/workflows/deploy.yml`文件，内容为以下
+5. 在项目的根目录上创建 `.github/workflows/deploy.yml` 文件，内容为以下
 
    ```yml
    # uses表示使用一些第三方库
@@ -111,7 +111,7 @@ W0B08iyVxvO91DRbfrwd27BDGYhWxNCtamzIg6UbIYnrk/3L3zi5gLQl5mPc2CQirYcI4L
 
 :::
 
-2. `deploy.yml`文件中的`uses`字段表示使用的是第三方包名，不要进行改动。如以下包
+2. `deploy.yml` 文件中的 `uses` 字段表示使用的是第三方包名，不要进行改动。如以下包
 
    - https://github.com/easingthemes/ssh-deploy
 
