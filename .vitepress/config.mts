@@ -64,6 +64,50 @@ export default defineConfig({
             link: '/docs/vue/项目部署在二级域名下'
           }
         ]
+      },
+      {
+        text: 'Vite',
+        items: [
+          {
+            text: '通过--mode指定环境变量',
+            link: '/docs/vite/通过--mode指定环境变量'
+          }
+        ]
+      },
+      {
+        text: 'SSH',
+        items: [
+          {
+            text: '报错',
+            link: '/docs/ssh/常见报错情况'
+          },
+          {
+            text: '默认端口不为22的情况',
+            link: '/docs/ssh/默认端口不为22的情况'
+          },
+          {
+            text: '通过ssh连接虚拟机',
+            link: '/docs/ssh/通过ssh连接虚拟机'
+          }
+        ]
+      },
+      {
+        text: 'Ubuntu',
+        items: [
+          {
+            text: '常见命令',
+            link: '/docs/ubuntu/常见命令'
+          }
+        ]
+      },
+      {
+        text: 'VMware',
+        items: [
+          {
+            text: '常见命令',
+            link: '/docs/vmware/配置桥接模式'
+          }
+        ]
       }
     ],
 
