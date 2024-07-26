@@ -18,4 +18,4 @@ pnpm run build
 
 ### 参考链接
 
-1. https://cn.vitejs.dev/guide/env-and-mode.html#modes
+1. [NODE_ENV 和 模式 ](https://cn.vitejs.dev/guide/env-and-mode.html#modes)

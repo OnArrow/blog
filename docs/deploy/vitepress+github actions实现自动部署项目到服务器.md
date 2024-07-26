@@ -91,7 +91,7 @@
 
 ::: code-group
 
-```bash [right]
+```bash [Right]
     -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEAsgVratuF64o6SCarBpJDj2IOlhU/QN6ECQ0fXpQ0cN/mlMTZuagQ
@@ -100,7 +100,7 @@ W0B08iyVxvO91DRbfrwd27BDGYhWxNCtamzIg6UbIYnrk/3L3zi5gLQl5mPc2CQirYcI4L
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-```bash [wrong]
+```bash [Wrong]
 
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEAsgVratuF64o6SCarBpJDj2IOlhU/QN6ECQ0fXpQ0cN/mlMTZuagQ
