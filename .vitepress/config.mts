@@ -104,7 +104,7 @@ export default defineConfig({
         text: 'VMware',
         items: [
           {
-            text: '常见命令',
+            text: '配置桥接模式',
             link: '/docs/vmware/配置桥接模式'
           }
         ]

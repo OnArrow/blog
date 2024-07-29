@@ -74,7 +74,7 @@
            SSH_PRIVATE_KEY: ${{ secrets.MAC_PRIVATE_KEY }}
            # SCP参数
            ARGS: '-avzr --delete'
-           # 服务器ip
+           # 服务器IP
            REMOTE_HOST: ${{ secrets.REMOTE_HOST_120 }}
            # 用户
            REMOTE_USER: 'root'

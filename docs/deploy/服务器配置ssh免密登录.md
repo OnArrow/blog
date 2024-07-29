@@ -1,6 +1,7 @@
 # 服务器配置 ssh 免密登录
 
-> 作者：冰冻大西瓜 原文链接： [服务器配置关闭 ssh 密码登录](https://bddxg.top/article/expansion/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%B9%E5%90%91/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E5%85%B3%E9%97%ADssh%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95.html)
+> Author: 冰冻大西瓜
+> Link: [服务器配置关闭 ssh 密码登录](https://bddxg.top/article/expansion/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%96%B9%E5%90%91/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E5%85%B3%E9%97%ADssh%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95.html)
 
 ::: tip
 私钥和公钥是一对，只有匹配上了才能连接成功
