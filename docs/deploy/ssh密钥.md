@@ -18,28 +18,28 @@ ssh-keygen -t rsa -C xxx@qq.com
 
 ## Get Public Key
 
-### Windows
+::: code-group
 
-```bash
+```bash [Windows]
 cat ~/.ssh/id_rsa.pub
 ```
 
-### Mac & Linux
-
-```bash
+```bash [Mac & Linux]
 cat ~/.ssh/id_rsa.pub
 ```
+
+:::
 
 ## Get Private key
 
-### Windows
+::: code-group
 
-```bash
+```bash [Windows]
 cat ~/.ssh/id_rsa
 ```
 
-### Mac & Linux
-
-```bash
+```bash [Mac & Linux]
 cat ~/.ssh/id_rsa
 ```
+
+:::
