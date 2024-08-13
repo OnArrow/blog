@@ -66,6 +66,15 @@ export default defineConfig({
         ]
       },
       {
+        text: 'pnpm',
+        items: [
+          {
+            text: 'pnpm',
+            link: '/docs/pnpm/pnpm'
+          }
+        ]
+      },
+      {
         text: 'Vite',
         items: [
           {
