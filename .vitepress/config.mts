@@ -117,6 +117,15 @@ export default defineConfig({
             link: '/docs/vmware/配置桥接模式'
           }
         ]
+      },
+      {
+        text: 'VSCode',
+        items: [
+          {
+            text: '开发插件',
+            link: '/docs/vscode/开发插件'
+          }
+        ]
       }
     ],
 
