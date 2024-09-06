@@ -12,6 +12,6 @@
    pnpm config set registry https://registry.npmjs.org
    // 官方源。默认
 
-   pnpm config set registry https://registry.npm.taobao.org
+   pnpm config set registry https://registry.npmmirror.com
    // 淘宝源
    ```
