@@ -119,4 +119,132 @@
     git log
     ```
 
-11. 在终端输入`code .`可以快速使用 `vscode` 打开当前目录
+11. 版本回退
+
+    1. 确认回退到哪一个 `commit`
+
+       ```
+       git log
+       ```
+
+    2. 回退
+
+       ```
+       git reset --hard [commitId]
+       ```
+
+    3. 强制推送到远程仓库
+
+       ```
+       git push -f
+       ```
+
+## Branch
+
+1. 创建一个分支并切换到此新分支
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git checkout -b [branch]
+   ```
+
+   ```bash [Example]
+   git checkout -b dev
+   // 创建一个 `dev` 分支
+   ```
+
+   :::
+
+2. 将新分支推送到远程仓库
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git push [远程仓库名称] [branch]
+   ```
+
+   ```bash [Example]
+   git push origin dev
+   // 将 `dev` 分支推送到 `origin` 这个远程仓库
+   ```
+
+   :::
+
+3. 删除本地分支并同步远程仓库
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git branch -d [branch]
+   git push [远程仓库名称] :[branch]
+   ```
+
+   ```bash [Example]
+   git branch -d dev
+   git push origin :dev
+   ```
+
+   :::
+
+## Merge
+
+1. 合并分支
+
+   1. 切换到 A 分支，合并 B 分支的代码到 A 分支
+
+      ```
+      git checkout A
+
+      git merge B
+      ```
+
+## Tag
+
+1. 创建一个 `tag`
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git tag -a [tag名称] -m [注释]
+   ```
+
+   ```bash [Example]
+   git tag -a v1.0 -m '第一个版本'
+   ```
+
+   :::
+
+2. 将 `tag` 推送到远程仓库
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git push [远程仓库名称] [tag名称]
+   ```
+
+   ```bash [Example]
+   git push origin v1.0
+   ```
+
+   :::
+
+3. 查看当前存在的 `tag`
+
+   ```
+   git tag
+   ```
+
+4. 查看某个 `tag` 的详细信息
+
+   ::: code-group
+
+   ```bash [Syntax]
+   git show [tag的名称]
+   ```
+
+   ```bash [Example]
+   git show v1.0
+   ```
+
+   :::
