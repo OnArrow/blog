@@ -126,6 +126,15 @@ export default defineConfig({
             link: '/docs/vscode/开发插件'
           }
         ]
+      },
+      {
+        text: 'Network',
+        items: [
+          {
+            text: '手动设置本机的IP',
+            link: '/docs/network/手动设置本机的IP'
+          }
+        ]
       }
     ],
 
