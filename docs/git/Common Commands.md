@@ -6,6 +6,7 @@
    git init
    ```
 
+
 2. 拷贝远程仓库到本地
 
    ::: code-group
@@ -68,6 +69,18 @@
    ```
 
    :::
+
+2. 提交代码区分大小写
+
+    ```bash
+    git config core.ignorecase false
+    ```
+
+    - 改完之后，发现gitlab或者github上仍然存在一份副本，是更改之前的，需要手动删除。是git的缓存导致的，如下命令手动删除：
+
+       ```
+       git rm --cached src/components/Header -r
+       ```
 
 6. 如果注释不小心写错了
 
@@ -145,6 +158,73 @@
        ```
        git push -f
        ```
+
+
+## Global Info
+
+2. 设置全局信息
+
+   ```bash
+   git config --global user.name "Your username"
+
+   git config --global user.email "Your email"
+   ```
+
+3. 查看全局信息
+
+   ```bash
+   git config user.name
+
+   git config user.email
+   ```
+
+
+## SSH Key
+
+### Generate key
+
+::: code-group
+
+```bash [Right]
+ssh-keygen -t rsa -C 'Your Email'
+```
+
+```bash [Example]
+ssh-keygen -t rsa -C xxx@qq.com
+```
+
+:::
+
+一直按`Enter`就可以
+
+### Get Public Key
+
+::: code-group
+
+```bash [Windows]
+cat ~/.ssh/id_rsa.pub
+```
+
+```bash [Mac & Linux]
+cat ~/.ssh/id_rsa.pub
+```
+
+:::
+
+### Get Private key
+
+::: code-group
+
+```bash [Windows]
+cat ~/.ssh/id_rsa
+```
+
+```bash [Mac & Linux]
+cat ~/.ssh/id_rsa
+```
+
+:::
+
 
 ## Branch
 
