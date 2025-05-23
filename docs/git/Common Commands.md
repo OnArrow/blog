@@ -335,3 +335,20 @@ cat ~/.ssh/id_rsa
    ```
 
    :::
+
+## Situation
+
+### 本来想在B分支修改代码，但是不小心在A分支修改了，但没有提交
+
+   
+
+   ```
+   # 1. A分支下 暂存改动（不提交）
+   git stash
+
+   # 2. 切换到B分支
+   git checkout B
+
+   # 3. B分支下 恢复改动
+   git stash pop
+   ```
