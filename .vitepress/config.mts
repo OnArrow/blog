@@ -29,6 +29,15 @@ export default defineConfig({
           }
         ]
       },
+       {
+        text: 'pm2',
+        items: [
+          {
+            text: 'pm2',
+            link: '/docs/pm2/pm2'
+          }
+        ]
+      },
       {
         text: 'Nginx',
         items: [
