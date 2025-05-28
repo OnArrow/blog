@@ -12,6 +12,15 @@ export default defineConfig({
       { text: 'About me', link: '/docs/other/About' }
     ],
     sidebar: [
+        {
+        text: 'plugins',
+        items: [
+          {
+            text: 'rimraf',
+            link: '/docs/plugins/rimraf'
+          }
+        ]
+      },
       {
         text: 'Deploy',
         items: [
