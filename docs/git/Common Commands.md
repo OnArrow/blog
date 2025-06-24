@@ -6,7 +6,6 @@
    git init
    ```
 
-
 2. 拷贝远程仓库到本地
 
    ::: code-group
@@ -70,26 +69,26 @@
 
    :::
 
-2. 提交代码区分大小写
+6. 提交代码区分大小写
 
-    ```bash
-    git config core.ignorecase false
-    ```
+   ```bash
+   git config core.ignorecase false
+   ```
 
-    - 改完之后，发现gitlab或者github上仍然存在一份副本，是更改之前的，需要手动删除。是git的缓存导致的，如下命令手动删除：
+   - 改完之后，发现 gitlab 或者 github 上仍然存在一份副本，是更改之前的，需要手动删除。是 git 的缓存导致的，如下命令手动删除：
 
-       ```
-       git rm --cached src/components/Header -r
-       ```
+     ```
+     git rm --cached src/components/Header -r
+     ```
 
-6. 如果注释不小心写错了
+7. 如果注释不小心写错了
 
    ```bash
    git commit --amend
    # 此时会进入默认vim编辑器，修改注释完毕后 :wq 保存退出
    ```
 
-7. 将本地的仓库推送到远程并合并
+8. 将本地的仓库推送到远程并合并
 
    ::: code-group
 
@@ -108,39 +107,39 @@
 
    :::
 
-8. 拉取远程仓库并合并到本地
+9. 拉取远程仓库并合并到本地
 
    ```bash
    git pull
    ```
 
-9. 切换分支
+10. 切换分支
 
-   ::: code-group
+    ::: code-group
 
-   ```bash [Syntax]
-   git checkout [branch]
-   ```
+    ```bash [Syntax]
+    git checkout [branch]
+    ```
 
-   ```bash [Example]
-   git checkout master
-   ```
+    ```bash [Example]
+    git checkout master
+    ```
 
-   :::
+    :::
 
-10. 查看当前关联的远程仓库
+11. 查看当前关联的远程仓库
 
     ```bash
     git remote -v
     ```
 
-11. 查看 `Git` 日志
+12. 查看 `Git` 日志
 
     ```
     git log
     ```
 
-12. 版本回退
+13. 版本回退
 
     1. 确认回退到哪一个 `commit`
 
@@ -160,7 +159,6 @@
        git push -f
        ```
 
-
 ## Global Info
 
 2. 设置全局信息
@@ -178,7 +176,6 @@
 
    git config user.email
    ```
-
 
 ## SSH Key
 
@@ -225,7 +222,6 @@ cat ~/.ssh/id_rsa
 ```
 
 :::
-
 
 ## Branch
 
@@ -339,17 +335,56 @@ cat ~/.ssh/id_rsa
 
 ## Situation
 
-### 本来想在B分支修改代码，但是不小心在A分支修改了，但没有提交
+### 仓库迁移
 
-   
+- 例如，把 `azure` 中的仓库 A 迁移到 `gitlab` 的 B 仓库
 
-   ```
-   # 1. A分支下 暂存改动（不提交）
-   git stash
+1.  在 `gitlab` 上创建新仓库 B
 
-   # 2. 切换到B分支
-   git checkout B
+2.  将 A 项目克隆下来
 
-   # 3. B分支下 恢复改动
-   git stash pop
-   ```
+    ::: code-group
+
+    ```bash [Syntax]
+    git clone --mirror [A仓库地址]
+    ```
+
+    ```bash [Example]
+    git clone --mirror git@ssh.dev.azure.com:v3/xxx/xxxx
+    ```
+
+    :::
+
+3.  进入到克隆下来项目 A，终端执行
+
+    ::: code-group
+
+    ```bash [Syntax]
+    git remote set-url origin [B仓库地址]
+    // 关联到新仓库
+    ```
+
+    ```bash [Example]
+    git remote set-url origin ssh://git@gitlab.byw.com:5022/xxx/xxx
+    ```
+
+    :::
+
+4.  关联到新仓库后推送
+
+    ```
+    git push --mirror
+    ```
+
+### 本来想在 B 分支修改代码，但是不小心在 A 分支修改了，但没有提交
+
+```
+# 1. A分支下 暂存改动（不提交）
+git stash
+
+# 2. 切换到B分支
+git checkout B
+
+# 3. B分支下 恢复改动
+git stash pop
+```
