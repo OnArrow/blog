@@ -55,7 +55,13 @@
 
    :::
 
-5. 提交
+5. 查看有变更的文件
+
+   ```
+   git status
+   ```
+
+6. 提交
 
    ::: code-group
 
@@ -69,7 +75,7 @@
 
    :::
 
-6. 提交代码区分大小写
+7. 提交代码区分大小写
 
    ```bash
    git config core.ignorecase false
@@ -81,14 +87,14 @@
      git rm --cached src/components/Header -r
      ```
 
-7. 如果注释不小心写错了
+8. 如果注释不小心写错了
 
    ```bash
    git commit --amend
    # 此时会进入默认vim编辑器，修改注释完毕后 :wq 保存退出
    ```
 
-8. 将本地的仓库推送到远程并合并
+9. 将本地的仓库推送到远程并合并
 
    ::: code-group
 
@@ -107,13 +113,13 @@
 
    :::
 
-9. 拉取远程仓库并合并到本地
+10. 拉取远程仓库并合并到本地
 
-   ```bash
-   git pull
-   ```
+    ```bash
+    git pull
+    ```
 
-10. 切换分支
+11. 切换分支
 
     ::: code-group
 
@@ -127,37 +133,20 @@
 
     :::
 
-11. 查看当前关联的远程仓库
+12. 查看当前关联的远程仓库
 
     ```bash
     git remote -v
     ```
 
-12. 查看 `Git` 日志
+13. 查看 `Git` 日志
 
     ```
     git log
+
+    git reflog
+    // 显示当前分支的最近几次提交
     ```
-
-13. 版本回退
-
-    1. 确认回退到哪一个 `commit`
-
-       ```
-       git log
-       ```
-
-    2. 回退
-
-       ```
-       git reset --hard [commitId]
-       ```
-
-    3. 强制推送到远程仓库
-
-       ```
-       git push -f
-       ```
 
 ## Global Info
 
@@ -225,7 +214,16 @@ cat ~/.ssh/id_rsa
 
 ## Branch
 
-1. 创建一个分支并切换到此新分支
+1. 列出所有分支
+
+   ```bash
+   git branch
+
+   git branch -r
+   // 列出所有远程分支
+   ```
+
+2. 创建一个分支并切换到此新分支
 
    ::: code-group
 
@@ -240,7 +238,7 @@ cat ~/.ssh/id_rsa
 
    :::
 
-2. 将新分支推送到远程仓库
+3. 将新分支推送到远程仓库
 
    ::: code-group
 
@@ -255,7 +253,7 @@ cat ~/.ssh/id_rsa
 
    :::
 
-3. 删除本地分支并同步远程仓库
+4. 删除本地分支并同步远程仓库
 
    ::: code-group
 
@@ -388,3 +386,35 @@ git checkout B
 # 3. B分支下 恢复改动
 git stash pop
 ```
+
+### 版本回退
+
+::: tip
+此操作会导致 commit 的丢失，慎用！
+:::
+
+1. 确认回退到哪一个 `commit`
+
+   ```
+   git log
+   ```
+
+2. 回退
+
+   ```
+   git reset --hard [commitId]
+   ```
+
+3. 强制推送到远程仓库
+
+   ```
+   git push -f
+   ```
+
+## Suspense
+
+1. 选择一个 commit，合并进当前分支
+
+   ```
+   git cherry-pick [commit]
+   ```
