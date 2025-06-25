@@ -12,7 +12,16 @@ export default defineConfig({
       { text: 'About me', link: '/docs/other/About' }
     ],
     sidebar: [
-        {
+      {
+        text: 'tip',
+        items: [
+          {
+            text: 'tip',
+            link: '/docs/tip/tip'
+          }
+        ]
+      },
+      {
         text: 'plugins',
         items: [
           {
@@ -38,7 +47,7 @@ export default defineConfig({
           }
         ]
       },
-       {
+      {
         text: 'pm2',
         items: [
           {

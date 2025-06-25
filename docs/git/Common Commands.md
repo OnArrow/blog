@@ -1,5 +1,11 @@
 # Common Commands
 
+## Reference
+
+1. [常用 Git 命令清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
+## Basic
+
 1. 初始化本地仓库
 
    ```bash
