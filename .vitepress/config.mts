@@ -27,6 +27,10 @@ export default defineConfig({
           {
             text: 'rimraf',
             link: '/docs/plugins/rimraf'
+          },
+          {
+            text: 'sftpgo',
+            link: '/docs/plugins/sftpgo/sftpgo'
           }
         ]
       },
