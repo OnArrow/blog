@@ -40,6 +40,15 @@
 
    - ![sftpgo6](./images/sftpgo6.png)
 
+## 待确定
+
+1. 在 1Panel 上添加新的静态网站时，需要执行以下命令修改宿主机目录权限
+
+   ```
+   sudo chown -R 1000:1000 /home/tools/1panel/1panel/apps/openresty/openresty/www/sites
+   sudo chmod -R 755 /home/tools/1panel/1panel/apps/openresty/openresty/www/sites
+   ```
+
 ## Jenkins
 
 1. 安装 `Publish Over SSH` 插件
