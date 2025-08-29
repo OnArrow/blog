@@ -44,6 +44,8 @@
 
 1. 在 1Panel 上添加新的静态网站时，需要执行以下命令修改宿主机目录权限
 
+   - 目前每添加一个静态站点，都要在宿主机上执行一遍以下命令
+
    ```
    sudo chown -R 1000:1000 /home/tools/1panel/1panel/apps/openresty/openresty/www/sites
    sudo chmod -R 755 /home/tools/1panel/1panel/apps/openresty/openresty/www/sites
