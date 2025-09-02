@@ -54,6 +54,10 @@ dig +nocmd _acme-challenge.yourdomain.com txt +noall +answer
 # These files will be updated when the certificate renews.
 
 
+![alt text](image-2.png)
+
 ```
 
 # 参考 https://juejin.cn/post/7296404570949386290?searchId=2025090115544829C89C18BCCDB5C830D9
+
+
