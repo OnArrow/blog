@@ -8,22 +8,22 @@ pm2 ls
 
 ## 执行 node 项目中的 `package.json` 中的脚本
 
-1. package.json内容如下
+1. package.json 内容如下
 
 ```
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js"
+    "dev": "node ./src/index.js"
 }
 ```
 
-2. 通过pm2来执行这个 `start` 脚本命令。并将启动的应用命名为 `my-app`
+2. 通过 pm2 来执行这个 `dev` 脚本命令。并将启动的应用命名为 `my-app`
 
 ```
-pm2 start npm --name "my-app" -- run start
+pm2 start npm --name "my-app" -- run dev
 ```
 
-## 停止某个node应用
+## 停止某个 node 应用
 
 1. 停止 `my-app` 这个应用
 
@@ -31,7 +31,7 @@ pm2 start npm --name "my-app" -- run start
 pm2 stop my-app
 ```
 
-## 重启某个node应用
+## 重启某个 node 应用
 
 1. 重启 `my-app` 这个应用
 
@@ -39,7 +39,7 @@ pm2 stop my-app
 pm2 restart my-app
 ```
 
-## 删除某个node应用
+## 删除某个 node 应用
 
 1. 删除 `my-app` 这个应用
 
@@ -49,7 +49,8 @@ pm2 stop my-app
 
 pm2 delete my-app
 ```
-## 重命名某个node应用
+
+## 重命名某个 node 应用
 
 1. 将 `my-app` 重命名为 `my-node-app`
 
